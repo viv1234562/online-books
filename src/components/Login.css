@@ -1,0 +1,94 @@
+
+.login-wrapper {
+    height: 100vh;
+    background-image: url('https://images.pexels.com/photos/4861352/pexels-photo-4861352.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'); /* Change this to your image path */
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .login {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .login form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    
+  }
+  
+  .login input {
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+  }
+  
+  .btn-primary {
+    background-color: #4285f4;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .btn-primary:hover {
+    background-color: #357ae8;
+  }
+  
+  .btn-primary:active {
+    background-color: #2a65c7;
+  }
+  
+  .btn-secondary {
+    background-color: #db4437;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .btn-secondary:hover {
+    background-color: #c33c2e;
+  }
+  
+  .btn-secondary:active {
+    background-color: #a33126;
+  }
+  
+  .login p {
+    margin-top: 20px;
+    font-size: 14px;
+    color: #666;
+  }
+  
+  .login p span {
+    color: #4285f4;
+    cursor: pointer;
+    margin-left: 5px;
+  } 
+   
+
+
+
+
+
+
+  
+  

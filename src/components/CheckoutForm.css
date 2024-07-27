@@ -1,0 +1,235 @@
+
+  .checkout-form h2 {
+    margin-bottom: 25px;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    font-size: 24px;
+    color: #333;
+  }
+  
+  /* Form group styling */
+  .form-group {
+    margin-bottom: 20px;
+    position: relative;
+  }
+  
+  /* Label styling */
+  .form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 16px;
+    color: #555;
+  }
+  
+  
+.payment-options {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+  }
+  
+  .payment-options label {
+    margin-bottom: 12px;
+    font-size: 16px;
+    color: #333;
+    position: relative;
+    padding-left: 40px; /* Space for icons */
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+  
+  /* Payment method icons */
+  .payment-options input[type="radio"] {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    margin-right: 15px;
+    accent-color: #4CAF50;
+    appearance: none; 
+    cursor: pointer;
+  }
+  
+  .payment-options input[type="radio"]:checked + label::before {
+    content: '';
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    background: #4CAF50;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transform: scale(1.1);
+  }
+  
+  .payment-options label::before {
+    content: '';
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    background: #eee;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: background 0.3s, transform 0.3s;
+  }
+  
+  /* 3D effect for icons */
+  .payment-options input[type="radio"]:checked + label {
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.25);
+  }
+  
+  .payment-options input[type="radio"]:checked + label i {
+    color: #4CAF50;
+    transform: scale(1.2);
+  }
+  
+  
+  .payment-options i {
+    font-size: 20px;
+    transition: color 0.3s, transform 0.3s;
+  }
+  
+  
+  .payment-options label:hover {
+    transform: scale(1.02);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+  }
+  
+
+
+
+
+.checkout-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+  }
+  
+  
+  .checkout-form {
+    background: linear-gradient(135deg, #f9f9f9, #e0e0e0);
+    border-radius: 15px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    max-width: 450px;
+    padding: 25px;
+    width: 100%;
+  }
+  
+  
+  .checkout-form input {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 12px;
+    width: 100%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+    margin-bottom: 15px;
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+  }
+  
+  .checkout-form input:focus {
+    outline: none;
+    border-color: #4CAF50;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+    transform: translateY(-2px);
+  }
+  
+  
+  .checkout-form button {
+    background: linear-gradient(135deg, #4CAF50, #66bb6a);
+    border: none;
+    border-radius: 8px;
+    color: white;
+    cursor: pointer;
+    display: block;
+    margin: 20px auto;
+    padding: 12px 24px;
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: background 0.3s, transform 0.3s, box-shadow 0.3s;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  .checkout-form button:hover {
+    background: linear-gradient(135deg, #45a049, #5cb85c);
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.25);
+  }
+  
+
+  .thank-you-message {
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    max-width: 450px;
+    margin: 0 auto;
+  }
+  
+  .thank-you-message h2 {
+    color: #333;
+    font-size: 24px;
+  }
+  
+
+.checkout-form {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  background: #f9f9f9;
+}
+
+.checkout-form h2 {
+  margin-bottom: 20px;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.form-group input[type="text"],
+.form-group input[type="email"],
+.payment-options {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.payment-options label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.total-price {
+  margin-top: 20px;
+  font-size: 18px;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+
+
+
+
+
